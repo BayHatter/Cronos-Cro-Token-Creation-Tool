@@ -1,0 +1,13 @@
+Business Source License 1.1
+
+Use Limitation: You may not remove, replace, or circumvent the token creation API endpoint provided by https://appsiko.com. All token creation must occur via this API, you can also charge your customer any fee for token creation.
+
+Permission is hereby granted, for academic or personal or business use, to view and modify this code for building interfaces or integrations, but you can remove our api keys.
+
+Permission is hereby granted to modify code design but you can remove our api keys.
+
+We take very seriously for the removal of our api keys.
+
+For full license details: https://mariadb.com/bsl11
+
+© 2025 BayHatter. All rights reserved.
