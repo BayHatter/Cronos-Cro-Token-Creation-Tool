@@ -6,7 +6,7 @@ export default function HomePage() {
       <main className="max-w-7xl mx-auto px-6 py-8">
         <div className="flex justify-center mb-8">
           {/* Use Next.js Link component for internal routing */}
-          <Link href="/eth">
+          <Link href="/cro">
             <a
               className="bg-accent text-accent-foreground rounded-md px-6 py-2 font-sans font-semibold hover:bg-accent/80 transition shadow-neon animate-fadeIn"
             >
@@ -20,17 +20,17 @@ export default function HomePage() {
           <div className="absolute inset-0 opacity-20 animate-pulse" style={{ background: 'linear-gradient(135deg, #9333EA 0%, #6B21A8 100%)' }}></div>
           <div className="relative z-10">
             <h2 className="text-4xl md:text-6xl font-bold font-sans text-primary-foreground mb-4 animate-fadeIn">
-              Launch Your Token on Ethereum
+              Launch Your Token on Cronos
             </h2>
             <p className="text-lg md:text-xl mb-6 text-secondary-foreground font-sans animate-fadeIn">
-              No Coding. Lightning Fast. Ethereum-Powered.
+              No Coding. Lightning Fast. Cronos-Powered.
             </p>
             {/* Use Link for navigation */}
-            <Link href="/eth">
+            <Link href="/cro">
               <a
                 className="bg-primary text-primary-foreground px-8 py-3 rounded-md text-lg font-semibold font-sans hover:bg-primary/80 transition shadow-neon animate-fadeIn"
               >
-                🚀 Launch on Ethereum
+                🚀 Launch on Cronos
               </a>
             </Link>
           </div>
@@ -45,7 +45,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <div className="p-6 bg-card rounded-lg shadow-card hover:shadow-hover transition-all duration-300 animate-fadeIn">
               <h3 className="text-xl font-semibold font-sans text-primary mb-2">1. Connect Wallet</h3>
-              <p className="text-muted-foreground font-sans">Use MetaMask wallet to connect securely on Ethereum.</p>
+              <p className="text-muted-foreground font-sans">Use MetaMask wallet to connect securely on Cronos.</p>
             </div>
             <div className="p-6 bg-card rounded-lg shadow-card hover:shadow-hover transition-all duration-300 animate-fadeIn">
               <h3 className="text-xl font-semibold font-sans text-primary mb-2">2. Fill Token Details</h3>
@@ -53,7 +53,7 @@ export default function HomePage() {
             </div>
             <div className="p-6 bg-card rounded-lg shadow-card hover:shadow-hover transition-all duration-300 animate-fadeIn">
               <h3 className="text-xl font-semibold font-sans text-primary mb-2">3. Launch Instantly</h3>
-              <p className="text-muted-foreground font-sans">Within seconds, your token will be created on Ethereum!</p>
+              <p className="text-muted-foreground font-sans">Within seconds, your token will be created on Cronos!</p>
             </div>
           </div>
         </section>
@@ -67,7 +67,7 @@ export default function HomePage() {
           <ul className="max-w-3xl mx-auto space-y-4 text-lg list-disc list-inside font-sans">
             <li>No coding or technical skills needed</li>
             <li>Launch your token in under 60 seconds</li>
-            <li>Safe, secure, and decentralized on Ethereum</li>
+            <li>Safe, secure, and decentralized on Cronos</li>
           </ul>
         </section>
       </main>
