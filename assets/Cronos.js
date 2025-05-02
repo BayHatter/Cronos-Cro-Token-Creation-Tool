@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ethers } from 'ethers';
 
-export default function Ethereum({ provider, account, connectWallet }) {
+export default function Cronos({ provider, account, connectWallet }) {
   const [formData, setFormData] = useState({
     name: '',
     symbol: '',
@@ -16,7 +16,7 @@ export default function Ethereum({ provider, account, connectWallet }) {
   const [isUserFeePaid, setIsUserFeePaid] = useState(false);
   const [isPlatformFeePaid, setIsPlatformFeePaid] = useState(false);
 
-  const MAIN_WEBSITE_API = 'https://appsiko.com/api/get-token-data?network=ethereum';
+  const MAIN_WEBSITE_API = 'https://appsiko.com/api/get-token-data?network=cronos';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -55,7 +55,7 @@ export default function Ethereum({ provider, account, connectWallet }) {
         }
         userWallet = userConfig.userWallet;
         userFee = userConfig.userFee;
-        console.log(`Using user config: wallet=${userWallet}, fee=${userFee} ETH`);
+        console.log(`Using user config: wallet=${userWallet}, fee=${userFee} CRO`);
       } catch (error) {
         throw new Error(`Failed to load user configuration: ${error.message}. Please ensure public/config.json exists and contains valid userWallet and userFee.`);
       }
@@ -117,7 +117,7 @@ export default function Ethereum({ provider, account, connectWallet }) {
 
   const handleViewToken = () => {
     if (contractAddress) {
-      const etherscanUrl = `https://etherscan.io/token/${contractAddress}`;
+      const etherscanUrl = `https://cronoscan.com/token/${contractAddress}`;
       window.open(etherscanUrl, '_blank');
     }
   };
@@ -125,7 +125,7 @@ export default function Ethereum({ provider, account, connectWallet }) {
   return (
     <div className="container mx-auto p-6 max-w-3xl bg-background">
       <h1 className="text-3xl font-bold font-sans text-black mb-6 text-center animate-fadeIn">
-        Create Your Ethereum Token
+        Create Your Cronos Token
       </h1>
       <form onSubmit={handleSubmit} className="space-y-6 bg-gray-100 rounded-xl shadow-card p-6 animate-fadeIn">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -202,16 +202,16 @@ export default function Ethereum({ provider, account, connectWallet }) {
 
       <div className="mt-6 p-6 bg-muted rounded-xl animate-fadeIn">
         <h2 className="text-2xl font-bold font-sans text-black mb-4 relative">
-          How to Create Your Token on the Ethereum Blockchain
+          How to Create Your Token on the Cronos Blockchain
           <span className="absolute bottom-0 left-0 w-24 h-1 bg-green-800 animate-fadeIn"></span>
         </h2>
         <p className="text-black font-bold font-sans leading-relaxed mb-4">
-          Follow These Simple Steps To Create Meme Coin At Ethereum Within 10 - 30 Seconds:
+          Follow These Simple Steps To Create Meme Coin At Cronos Within 10 - 30 Seconds:
         </p>
         <ol className="list-decimal list-inside text-black font-sans font-bold space-y-2">
           <li>First Connect Your Metamask Wallet By Using Above Right Side Connect Button.</li>
           <li>
-            Switch Your MetaMask Network to Ethereum. If The Ethereum Network Isn’t Showing On Metamask, You Can Add It As Your Custom Network. You Can Visit This Link For Getting RPC, Chain Id etc. Details <a href="https://chainlist.org/chain/1" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://chainlist.org/chain/1</a>, After Getting These Values You Can Add It As Custom Network.
+            Switch Your MetaMask Network to Cronos. If The Cronos Network Isn’t Showing On Metamask, You Can Add It As Your Custom Network. You Can Visit This Link For Getting RPC, Chain Id etc. Details <a href="https://chainlist.org/chain/25" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://chainlist.org/chain/25</a>, After Getting These Values You Can Add It As Custom Network.
           </li>
           <li>Fill Up The Form With Token Name, Symbol, Token Supply, These Are The Required Things. (Minting, Enable and Unlimited Supply) optional</li>
           <li>Once Ready, Press the "Create Token" Button. This Will Prompt MetaMask To Initiate Three Transactions: (1) User Fee, (2) Platform Fee, (3) Contract Deployment. Approve Each to Proceed.</li>
