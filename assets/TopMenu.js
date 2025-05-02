@@ -18,7 +18,7 @@ export default function TopMenu({ account, connectWallet, disconnectWallet }) {
         <Link href="/">
           <a className="px-4 py-2 rounded-md bg-blue-300 font-bold hover:bg-blue-400">Home</a>
         </Link>
-        <Link href="/eth">
+        <Link href="/cro">
           <a className="px-4 py-2 rounded-md bg-blue-300 font-bold hover:bg-blue-400">Create Coin</a>
         </Link>
 
@@ -45,7 +45,7 @@ export default function TopMenu({ account, connectWallet, disconnectWallet }) {
           <Link href="/">
             <a className="block py-2 px-4 rounded-md bg-blue-300 font-bold hover:bg-blue-400">Home</a>
           </Link>
-          <Link href="/eth">
+          <Link href="/cro">
             <a className="block py-2 px-4 rounded-md bg-blue-300 font-bold hover:bg-blue-400">Create Coin</a>
           </Link>
           <div className="mt-4">
